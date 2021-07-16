@@ -1,0 +1,126 @@
+html, body {
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 200vh;
+   font-family: "Larsseit";
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-weight: 400;
+}
+
+li {
+   list-style: none;
+   font-size: 1.8em;
+}
+
+a {
+   text-decoration: none;
+   color: #000;
+}
+
+a:hover {
+   text-decoration: line-through;
+}
+
+.header {
+   position: absolute;
+   width: 100%;
+   height: 100vh;
+   background: #000;
+   z-index: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.header .hero-image {
+   position: absolute;
+   width: 30%;
+   height: 70%;
+   background: url("hero-bg.jpg") no-repeat center;
+   background-size: cover;
+   opacity: 0.7;
+}
+
+.header h1 {
+   font-size: 12em;
+   font-family: "GrandSlang";
+   color: #fff;
+   z-index: 2;
+}
+
+.footer {
+   position: fixed;
+   width: 100%;
+   height: 100vh;
+   background: #fff;
+}
+
+.footer-content {
+   position: absolute;
+   width: 78%;
+   height: 75%;
+   right: 0;
+   bottom: 0;
+   margin: 0 3em 3em 0;
+}
+
+.footer-content h2 {
+   font-size: 3.7em;
+   line-height: 1.1em;
+}
+
+.primary-section,
+.secondary-section {
+   display: flex;
+   margin-top: 3.5em;
+   width: 90%;
+   border-top: 1px solid #000;
+   border-bottom: 1px solid #000;
+}
+
+.primary-section > li,
+.secondary-section > li {
+   padding: 20px 25px;
+   border-left: 1px solid #000;
+}
+
+.primary-section > li:nth-child(1),
+.secondary-section > li:nth-child(1) {
+   border-left: none;
+   padding-left: 0;
+}
+
+.primary-section > li:nth-child(3) {
+   flex-grow: 1;
+}
+
+.primary-section > li:last-child,
+.secondary-section > li:last-child {
+   padding-right: 0;
+}
+
+.secondary-section {
+   position: absolute;
+   width: 100%;
+   bottom: 0;
+}
+
+.secondary-section > li:nth-child(2) {
+   flex-grow: 1;
+}
+
+.arrow {
+   position: absolute;
+   margin-top: 5%;
+   right: 0;
+   width: 12em;
+   height: 12em;
+   background: url('arrow.svg') no-repeat;
+   background-size: cover;
+}
